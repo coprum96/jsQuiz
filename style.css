@@ -1,0 +1,335 @@
+:root {
+  background-image: url(   https://www.manufosela.es/shooting_stars/hori.png), url( https://www.manufosela.es/shooting_stars/stars_5.png);
+}
+
+.stars {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+  
+  .star {
+    position: absolute;
+    background-image: url('star.webp');
+    background-size: cover;
+    width: 20rem;
+    height: 35rem;
+    will-change: transform;
+    animation: shooting-star 30s linear infinite;
+
+  }
+  
+  @keyframes shooting-star {
+    0% {
+      transform: translateY(200%) translateX(-100%);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0%) translateX(300%);
+      opacity: 1;
+    }
+  }
+  
+    .moons {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+  
+  .moon {
+    z-index: -1;
+    position: absolute;
+    background-image: url('star.png');
+    background-size: cover;
+    width: 30rem;
+    height: 30rem;
+  }
+  
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 44%;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+h1 {
+    font-size: 10rem;
+    margin-bottom: 5rem;
+    color: rgb(255, 255, 255);
+    margin: 70px;
+}
+
+h2 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    font-size: 6rem;
+    padding: 6rem 0;
+    width: 50rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin: 30px;
+    text-decoration: none;
+    color: rgb(187, 22, 187);
+    background: linear-gradient(90deg,rgb(10, 18, 121), rgb(0,10,255),100%);
+    border-radius: 4px;
+
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(18,92,255);
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+#highscores-btn:hover {
+    color: aqua;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 255, 0, 0.253);
+}
+
+.info_box {
+  display: none;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #121212;
+  color: rgb(138, 138, 138);
+  font-weight: 500;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-family: 'Luckiest Guy', cursive;
+  -webkit-box-shadow: 0px 0px 21px 14px rgba(75,15,255,0.89); 
+  box-shadow: 0px 0px 21px 14px rgba(75,15,255,0.89);
+<<<<<<< HEAD
+  margin-top: 50px;
+=======
+>>>>>>> 7ec1e8f4ee2f98f9c3ea07c963d3e0eb4f565b30
+}
+
+.show {
+  display: block;
+}
+
+
+.info_box .info_title {
+  height: 100%;
+  width: 100%;
+  border: 2px solid purple;
+  border-top: 2px solid purple;
+  display: flex;
+  align-items: center;
+  padding: 0 35px;
+  color: #fff;
+}
+
+.info_title {
+  font-size: 80px;
+  margin-bottom: 30px;
+}
+.info {
+  font-size: 30px;
+}
+
+.quit {
+  font-size: 6rem;
+  padding: 6rem 0;
+  width: 50rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin: 30px;
+  text-decoration: none;
+  color: rgb(29, 26, 201);
+  background: linear-gradient(90deg,rgb(10, 18, 121), rgb(0,10,255),100%);
+  border-radius: 4px;
+
+}
+.quit:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgb(18,92,255);
+  transition: transform 150ms;
+  transform: scale(1.03);
+}
+
+.quit[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+/* End page style */
+
+.end-form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100rem;
+}
+
+input {
+  margin-bottom: 1rem;
+  width: 20rem;
+  padding: 2.5rem;
+  font-size: 5.8rem;
+  border: none;
+}
+
+input::placeholder {
+  color:#aaa;
+}
+
+#username {
+
+  width: 100%;
+  outline: none;
+}
+
+#end-text {
+  font-size: 13px;
+  color: #fff;
+}
+
+#saveScoreBtn {
+  background-color: rgba(252, 247, 247, 0);
+}
+
+.btn-end {
+  font-size: 5rem;
+  padding: 5rem 0;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(187, 22, 187);
+  background: linear-gradient(90deg,rgb(10, 18, 121), rgb(0,10,255),100%);
+  border-radius: 4px;
+  border-color: #121212;
+}
+
+.fa-home {
+  margin-left: 1rem;
+  font-size: 2rem;
+  color: (28, 26, 26);
+}
+
+#finalScore {
+  text-align: center;
+}
+
+@media screen and (min-width: 280px) and (max-width: 539px) {
+  .info_box {
+    width: 250px;
+  }
+
+  .info_title {
+  font-size: 60px;
+}
+.info {
+  font-size: 15px;
+}
+.quit {
+  font-size: 10px;
+  padding: 10px;
+  width: 100px;
+}
+}
+
+@media screen and (min-width: 540px) and (max-width: 1024px) {
+  .info_box {
+    width: 500px;
+  }
+
+  .info_title {
+  font-size: 80px;
+}
+.info {
+  font-size: 20px;
+}
+.quit {
+  font-size: 20px;
+  padding: 10px;
+  width: 200px;
+}
+}
+
+@media screen and (min-width: 280px) and (max-width: 541px) {
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+  font-size: 8rem;
+  margin-left: 100px;
+  margin-top: 180px;
+  width: 300px;
+}
+.btn {
+  font-size: 4rem;
+  padding: 4rem 0;
+  width: 50rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 20rem;
+  padding: 2.5rem;
+  font-size: 4rem;
+}
+
+#username {
+  width: 60%;
+}
+.end-form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100rem;
+}
+}

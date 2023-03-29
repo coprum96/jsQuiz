@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+
+    <div class="info_box">
+        <div class="info_title">
+          <span>Some Rules of this JS Quiz</span>
+        </div>
+        <div class="info_list">
+          <div class="info">1. The quiz will consist of 10 multiple choice questions.</div>
+          <div class="info">2. Each question will have four possible answers, only one of which is correct.</div>
+          <div class="info">3. Cheating is strictly prohibited and may result in disqualification.</div>
+          <div class="info">4. The quiz organizer has the right to change or modify the rules at any time.</div>
+          <div class="info">5. The quiz organizer will have the final say in all decisions related to the quiz.</div>
+        </div>
+        <div class="buttons">
+          <button class="quit">I AM READY</button>
+        </div>
+      </div>
+
+
+     <div class="container-game">
+        <div id="game" class="justify-center flex-column">
+            <div id="hud">
+                <div class="hud-item progress-item">
+                    <p id="progressText" class="hud-prefix">
+                        Question
+                    </p>
+                    <div id="progressBar">
+                        <div id="progressBarFull"></div>
+                    </div>
+                </div>
+                <div class="hud-item score-item">
+                    <p class="hud-prefix">
+                        Score
+                    </p>
+                    <h1 class="hud-main-text" id="score">
+                        0
+                    </h1>
+                </div>
+            </div>
+            <h1 id="question">What is the answer</h1>
+            <div class="choice-container">
+                <p class="choice-prefix">A</p>
+                <p class="choice-text" data-number ="1">Choice 1</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">B</p>
+                <p class="choice-text" data-number ="2">Choice 2</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">C</p>
+                <p class="choice-text" data-number ="3">Choice 3</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">D</p>
+                <p class="choice-text" data-number ="4">Choice 4</p>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
